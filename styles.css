@@ -62,7 +62,7 @@ section{
     position: absolute;
     width: 100%;
     height: 100%;
-    padding: 10rem 9% 2rem;
+    padding: 6rem 9% 2rem;
     background: var(--bg-color);
     visibility: hidden;
     opacity: 0;
@@ -481,4 +481,41 @@ section.active{
     color: var(--white-color);
     margin-left: .5rem;
     font-size: 1.1rem;
+}
+
+.portfolio-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+}
+
+.portfolio-detail{
+    display: none;
+}
+
+.portfolio-detail.active{
+    display: block;
+}
+
+.portfolio-box .numb{
+    font-size: 4rem;
+    -webkit-text-stroke: .07rem var(--white-color);
+    color: transparent;
+    line-height: 1;
+}
+
+.portfolio-box h3{
+    font-size: 2.5rem;
+    margin: 0.6rem 0 1rem;
+}
+
+.portfolio-box p{
+    font-size: 1.1rem;
+}
+
+.portfolio-box .tech{
+    margin: 1rem 0;
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--white-color);
+    padding-bottom: 1rem;
 }
