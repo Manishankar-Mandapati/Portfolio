@@ -621,3 +621,90 @@ section.active{
 .portfolio-box .navigation .arrow-right{
     margin-left: 1rem;
 }
+
+.contact-container{
+     display: grid;
+     grid-template-columns: 1fr 1.3fr;
+     gap: 3rem;
+}
+
+.contact-container .contact-box:first-child{
+    align-self: center;
+}
+
+.contact-box h2{
+    font-size: 2.5rem;
+}
+
+.contact-box p{
+    font-size: 1rem;
+}
+
+.contact-box .desc{
+    margin: 1.5rem 0 2.5rem;
+}
+
+.contact-box .contact-detail{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.contact-detail i{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--second-bg-color);
+    color: var(--main-color);
+    font-size: 1.5rem;
+    padding:1rem 1.9rem;
+    border-radius: .6rem;
+    margin-right: 1.5rem;
+}
+
+.contact-detail .detail p:first-child{
+    color: var(--main-color);
+    font-size: 1.5rem;
+}
+
+.contact-box form{
+    background: var(--second-bg-color);
+    padding: 2rem 3.2rem 3.2rem;
+    border-radius: 1rem;
+    text-align: center;
+
+}
+
+.contact-box .heading{
+    font-size: 2.5rem;
+}
+
+.contact-box .field-box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+
+.contact-box .btn{
+    margin-top: 1rem;
+}
+
+.contact-box .field-box textarea{
+    grid-column: 1/-1;
+    height: 15rem;
+    resize: none;
+}
+
+.contact-box .field-box input,textarea{
+    padding: 1rem;
+    background-color: var(--bg-color);
+    border: .15rem solid var(--second-bg-color);
+    border-radius: .6rem;
+    font-size: 1rem;
+    color: var(--white-color);
+}
+
+.contact-box .field-box input:focus,
+.contact-box .field-box textarea:focus{
+    border-color: var(--main-color);
+}

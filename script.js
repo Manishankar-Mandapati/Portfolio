@@ -1,3 +1,27 @@
+const navLinks=document.querySelectorAll('header nav a');
+const sections = document.querySelectorAll('section')
+
+const activePage = () => {
+    navLinks.forEach((link) => {
+        link.classList.remove('active')
+    })
+    sections.forEach((sect) => {
+        sect.classList.remove('active')
+    })
+}
+
+navLinks.forEach((link, idx) => {
+    link.addEventListener('click',() => {
+        if(!link.classList.contains('active')){
+            activePage()
+            link.classList.add('active')
+            sections[idx].classList.add('active')
+        }
+        
+    })
+})
+
+
 const resumeBtns =document.querySelectorAll('.resume-btn');
 
 resumeBtns.forEach((btn,idx)=>{
